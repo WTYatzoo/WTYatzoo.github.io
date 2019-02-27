@@ -1,0 +1,145 @@
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{chngpage}
+\usepackage{array}
+%\usepackage[colorlinks]{hyperref}
+\usepackage[colorlinks,urlcolor=black,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=blue,runcolor=blue]{hyperref}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\name{Tianyu Wang} % Your name
+%\address{156 Kasturi, Balajinagar, Sangli 416416} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+86)18258882697 \\ wtyatzoo@qq.com \\ wtyatzoo@zju.edu.cn} % Your phone number and email
+
+\begin{document}
+
+\begin{rSection}{Profile}
+I currently work as a research assistant for Prof. Jin Huang in Physics\&Geometry group, State Key Lab of CAD\&CG, Zhejiang University. My research interest is mainly on physics-based simulation by numerical PDE solving and using numerical optimization for visual computing problems. I have some experience in solid and fluid simulation, geometry processing and deep learning. 
+\end{rSection}
+
+\begin{rSection}{Education}
+
+{\bf Zhejiang University, Hangzhou, China} \hfill {\em September 2016 - Present} 
+\\ M.Sc. in Computer Science\hfill {Advisor: Prof. Jin Huang} 
+%\\ Department of Structural Engineering\\
+\\{\bf Sichuan University, Chengdu, China} \hfill {\em September 2012 - June 2016} 
+\\ B.Sc. in Computer Science\hfill { Overall GPA: 81.54/100 }
+
+\end{rSection}
+
+\begin{rSection}{Publication}
+Jiong Chen, Hujun Bao, \textbf{Tianyu Wang}, Mathieu Desbrun, Jin Huang: Numerical Coarsening using Discontinuous Shape Functions. \emph{ACM Transaction Graphics 37(4)(SIGGRAPH 2018)}, Vancouver, Canada, 2018
+\end{rSection}
+
+\iffalse
+\begin{rSection}{Work Experience}
+\end{rSection}
+\fi
+
+\begin{rSection}{Research Experience}
+
+  \begin{rSubsection}{Research Assistant,State Key Lab of CAD\&CG,ZJU}{September 2016 - present}
+    {Advisor: Prof. Jin Huang}{See below project section for details}
+\item {\bf Numerical coarsening of FEM based solid simulation}
+\item {\bf Cloth or solid simulation using mass-spring model} 
+\item {\bf Super-resolution of shallow water equation simulation based on GAN}
+  \end{rSubsection}
+
+\end{rSection}
+
+
+\begin{rSection}{Graphics related Projects}
+  \textbf{Solid deformation and simulation related:}\\
+         {\bf Cage based deformation using ARAP energy or moving least square}\\Deform mesh based on coarse cage and use as-rigid-as-possible energy or moving least square method extending the paper \emph{Image Deformation Using Moving Least Squares} to 3D.\\
+         \\{\bf FEM simulation of solid using different constitutive models}\\Dynamics or quasi-static simulation of solid using finite element method and using different constitutive models such as linear elasticity, co-rotational  linear elasticity,St. Venant-Kirchhoff model and Neohookean elasticity with tetrahedron mesh or hexahedron mesh. \\
+         \\{\bf Cloth or solid simulation using mass-spring model}\\Implement three versions of mass-spring based simulation: using classical newton method, using fast mass-spring method based on the paper \emph{Fast Simulation of Mass-Spring Systems}, using modified fast mass-spring based on the paper \emph{A Chebyshev Semi-Iterative Approach for Accelerating Projective and Position-based Dynamics} with a CUDA version jacobi solver acceleration.\\
+         \\{\bf Numerical coarsening of FEM based solid simulation}\\ Research for numerical coarsening acceleration solving of FEM based solid simulation of heterogeneous materials with non-linear constitutive laws with coarse grid. See the paper \emph{Numerical Coarsening using Discontinuous Shape Functions} for details.
+
+         \textbf{Geometry processing related:}\\
+                {\bf Catmull–Clark subdivision of surface mesh} A course project.\\\\
+                {\bf Some discrete operator measuring  curvature, normal on arbitrary triangle mesh}\\Junior training based on the paper \emph{Discrete Differential-Geometry Operators for Triangulated 2-Manifolds}, knowing the cotangent form curvature operator and practice of halfedge structure, mesh curvature measure and mesh smoothing based on the mean curvature flow.\\\\
+                {\bf Surface mesh fairness using different energy}\\A implementation of the paper \emph{An Intuitive Framework for Real-Time Freeform Modeling}, deforming mesh using different Laplace based energy: membrane surface energy, thin-plate surface, minimum variation surface energy with some fixed point constraints.\\\\
+                {\bf Heat flow based geodesic distance computation}\\A implementation of the paper \emph{Geodesics in Heat:A New Approach to Computing Distance Based on Heat Flow}. The algorithm core is just solving a possion equation!\\\\
+                {\bf L1-based construction of polycube maps for mesh}\\ A implementation of the core algorithm of the paper \emph{L1-based Construction of Polycube Maps from Complex Shapes}.\\\\
+                {\bf ARAP parameterization of triangle mesh}\\A implementation of the paper \emph{A Local/Global Approach to Mesh Parameterization}.\\\\
+         \textbf{Fluid simulation related:}\\
+                {\bf Shallow water simulation with weakly two-way coupling with rigid body} Practice.\\\\
+                {\bf Water simulation based on SPH method}\\A implementation of the earliest SPH based water simulation paper \emph{Particle-Based Fluid Simulation for Interactive Applications}.\\\\                
+                {\bf FLIP or PIC based water simulation with boundary correction}\\A simplified FlIP or PIC fluid solver with the boundary correction based on the paper \emph{A Fast Variational Framework for Accurate Solid-Fluid Coupling}.\\\\
+         \textbf{Deep learning related:}\\
+                {\bf Image style transfer}\\Pretend to be Vencent using the paper \emph{A Neural Algorithm of Artistic Style}!\\\\
+                {\bf Handwriting number generation based Generative Adversarial Networks(GAN)}\\ A simple implementation of the paper \emph{Generative Adversarial Networks} with just full connection layer on the handwriting number generation application.\\\\
+                {\bf Super-resolution of shallow water equation simulation based on GAN}\\ Research for SWE simulation data's super-resolution using GAN. See the \emph{\href{SWE.pdf}{report}} for details.   \\\\
+        \textbf{Rendering related:}\\
+                {\bf A naive path tracing solver} A course project.
+                
+         
+\end{rSection}
+
+\begin{rSection}{Honors and Awards}
+  \textbf{Graduate of Merit/Triple A graduate}, Zhejiang University, 2018\\
+  \textbf{Award of Honor for Graduate}, Zhejiang University, 2018\\
+  \textbf{Wen Chixiang Scholarship}, Zhejiang University, 2018\\
+  \textbf{Silver Medal}, ACM-ICPC China Provincial Programming Contest, Chengdu Site, 2013 and 2014\\
+  \textbf{2nd University Scholarship}, Sichuan University, 2013
+\end{rSection}
+
+%\newpage
+\begin{rSection}{Skills}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+Languages \ & C/C++,Python,Latex,Java \\
+Libraries \& Tools  & \tabincell{l}{Eigen,Boost,NumPy,Tensorflow,OpenGL,OpenCV,CUDA,OpenMP,ParaView,\\GIMP,Inkscape,CMake(Linux)}\\
+Platforms&Linux 16.04
+\end{tabular}
+
+\end{rSection}
+
+\iffalse
+\begin{rSection}{Academic Achievements} 
+ Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018
+\item Won First Prize in Model Making Competition Organized by Symbiosis Institute of Technology, Pune.
+\end{rSection}
+\fi
+
+
+
+\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+\item I love basketball and play as a point guard skilled in shooting!
+\item I love film and TV series and write film review on movie.douban.com!
+\end{rSection}
+
+\iffalse
+\begin{rSection}{Personal Traits}
+\item Highly motivated and eager to learn new things.
+\item Strong motivational and leadership skills.
+\item Ability to work as an individual as well as in group.
+\end{rSection}
+\fi
+
+\end{document}
