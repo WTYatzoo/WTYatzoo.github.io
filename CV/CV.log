@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.3)  28 FEB 2019 00:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.3)  28 FEB 2019 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,13 +309,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--101
  []
 
 
-Overfull \hbox (10.20262pt too wide) in paragraph at lines 84--101
-\OT1/cmr/m/n/10.95 Junior train-ing based on the pa-per \OT1/cmr/m/it/10.95 Dis
--crete Differential-Geometry Op-er-a-tors for Tri-an-gu-lated 2-Manifolds\OT1/c
-mr/m/n/10.95 ,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 84--101
 
  []
@@ -393,7 +386,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on CV.pdf (3 pages, 89267 bytes).
+Output written on CV.pdf (3 pages, 89280 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
