@@ -1,0 +1,70 @@
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{chngpage}
+\usepackage{array}
+%\usepackage[colorlinks]{hyperref}
+\usepackage[colorlinks,urlcolor=blue,linkcolor=blue,anchorcolor=black,citecolor=black,filecolor=blue,runcolor=blue]{hyperref}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\name{Tianyu Wang} % Your name
+%\address{156 Kasturi, Balajinagar, Sangli 416416} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+86)18258882697 \\ wtyatzoo@qq.com \\ wtyatzoo@zju.edu.cn} % Your phone number and email
+
+\begin{document}
+
+\begin{rSection}{Full Graphics related Projects}
+  \textbf{Solid deformation and simulation related:}\\
+         {\bf Cage based deformation using ARAP energy or moving least square}\\Deform mesh based on coarse cage and use as-rigid-as-possible energy or moving least square method extending the paper \emph{Image Deformation Using Moving Least Squares} to 3D.\\
+         \\{\bf FEM simulation of solid using different constitutive models}\\Dynamics or quasi-static simulation of solid using finite element method and using different constitutive models such as linear elasticity, co-rotational  linear elasticity,St. Venant-Kirchhoff model and Neohookean elasticity with tetrahedron mesh or hexahedron mesh. \\
+         \\{\bf Cloth or solid simulation using mass-spring model}\\Implement three versions of mass-spring based simulation: using classical Newton method, using local-global strategy based on the paper \textit{Fast Simulation of Mass-Spring Systems}, using modified fast mass-spring based on the paper \textit{A Chebyshev Semi-Iterative Approach for Accelerating Projective and Position-based Dynamics} with a CUDA version jacobi solver acceleration.\\
+         \\{\bf Numerical coarsening of FEM based solid simulation}\\ Research for numerical coarsening acceleration solving of FEM based solid simulation of heterogeneous materials with non-linear constitutive laws with coarse grid. See the paper \emph{Numerical Coarsening using Discontinuous Shape Functions} for the algorithm details. In this process, I implemented a basic FEM based solid simulation framework quickly first and then did the major two papers' comparison experiments almost by myself. And the first author Jiong Chen and I frequently communicated to analyze the experiment results. 
+
+         \textbf{Geometry processing related:}\\
+                {\bf Catmull–Clark subdivision of surface mesh} A course project.\\\\
+                {\bf Some discrete operator measuring  curvature, normal on arbitrary triangle mesh}\\Junior graduate student training based on the paper \emph{Discrete Differential-Geometry Operators for Triangulated 2-Manifolds}, knowing the cotangent form curvature operator and practice of halfedge structure, mesh curvature measure and mesh smoothing based on the mean curvature flow.\\\\
+                {\bf Surface mesh fairness using different energy}\\An implementation of the paper \emph{An Intuitive Framework for Real-Time Freeform Modeling}, deforming mesh using different Laplace based energy: membrane surface energy, thin-plate surface, minimum variation surface energy with some fixed point constraints.\\\\
+                {\bf Heat flow based geodesic distance computation}\\An implementation of the paper \emph{Geodesics in Heat:A New Approach to Computing Distance Based on Heat Flow} which uses heat flow to compute the geodesic distance for per mesh vertex or per points cloud's point to the specified mesh vertex or point on point cloud. The algorithm core is just solving a Possion equation which is elegant and concise in maths!\\\\
+                {\bf L1-based construction of polycube maps for mesh}\\  An implementation of the core algorithm of the paper \emph{L1-based Construction of Polycube Maps from Complex Shapes} which uses a L1 Polycube deformation based method for hexahedralization and the algorithm is mainly solving L1 norm optimization problem.\\\\
+                {\bf ARAP parameterization of triangle mesh}\\An implementation of the paper \emph{A Local/Global Approach to Mesh Parameterization}.\\\\
+         \textbf{Fluid simulation related:}\\
+                {\bf Shallow water simulation with weakly two-way coupling with rigid body} Practice.\\\\
+                {\bf Water simulation based on SPH method}\\An implementation of the earliest SPH based water simulation paper \emph{Particle-Based Fluid Simulation for Interactive Applications}.\\\\                
+                {\bf FLIP or PIC based water simulation with boundary correction}\\A simplified FlIP or PIC fluid solver with the boundary correction based on the paper \emph{A Fast Variational Framework for Accurate Solid-Fluid Coupling}.\\\\
+         \textbf{Deep learning related:}\\
+                {\bf Image style transfer}\\Pretend to be Vincent using the paper \emph{A Neural Algorithm of Artistic Style}!\\\\
+                {\bf Handwriting number generation based Generative Adversarial Networks(GAN)}\\ A simple implementation of the paper \emph{Generative Adversarial Networks} with just full connection layer on the handwriting number generation application.\\\\
+                {\bf Super-resolution of shallow water equation simulation based on GAN}\\ Research for SWE simulation data's super-resolution using GAN. See the \emph{\href{https://wtyatzoo.github.io/reports/SWE.pdf}{report}} for details.   \\\\
+        \textbf{Rendering related:}\\
+                {\bf A naive path tracing solver} A course project.
+                
+         
+\end{rSection}
+
+\end{document}
