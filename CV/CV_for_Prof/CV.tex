@@ -1,0 +1,136 @@
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{chngpage}
+\usepackage{array}
+%\usepackage[colorlinks]{hyperref}
+\usepackage[colorlinks,urlcolor=blue,linkcolor=blue,anchorcolor=black,citecolor=black,filecolor=blue,runcolor=blue]{hyperref}
+
+\linespread{0.8}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\name{Tianyu Wang} % Your name
+%\address{156 Kasturi, Balajinagar, Sangli 416416} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{https://wtyatzoo.github.io/ \\ https://github.com/WTYatzoo/}
+\address{(+86)18258882697 \\ wtyatzoo@qq.com \\ wtyatzoo@zju.edu.cn} % Your phone number and email
+
+
+\begin{document}
+
+\begin{rSection}{Profile}
+I currently work as a research assistant for Prof. Jin Huang in Physics\&Geometry group, State Key Lab of CAD\&CG, Zhejiang University and a R\&D intern at Xmov(Shanghai) advised by Prof. Jinxiang Chai. My research interest includes \textbf{(a).physically based simulation by numerical PDE solving, (b).using numerical optimization for inverse physical or geometric design and (c).image-based modeling system for human digitization}. I have some experience in solid(FEM based elasticity, mass-spring model, discrete rod model, discrete shell model, subspace acceleration, numerical homogenization, Galerkin multigrid acceleration) and fluid (SPH, grid, hybrid method, SWE model) simulation, geometry processing (smoothing, fairing, basic parameterization, geometric energy based deformation, subdivision, geodesic distance computation) , deep learning (CNN, GAN, super-resolution, style transfer) and single-view or sparse multi-view based hair modeling.
+\end{rSection}
+
+\begin{rSection}{Education}
+
+{\bf Zhejiang University, Hangzhou, China} \hfill {\em September 2016 - Present} 
+\\ M.Eng. in Computer Science\hfill {Advisor: Prof. Jin Huang} 
+%\\ Department of Structural Engineering\\
+\\{\bf Sichuan University, Chengdu, China} \hfill {\em September 2012 - June 2016} 
+\\ B.Eng. in Computer Science\hfill { Overall GPA: 81.54/100 }
+
+\end{rSection}
+
+\begin{rSection}{Publication}
+Jiong Chen, Hujun Bao, \textbf{Tianyu Wang}, Mathieu Desbrun, Jin Huang: Numerical Coarsening using Discontinuous Shape Functions. \emph{ACM Transaction Graphics 37(4)(SIGGRAPH 2018)}, Vancouver, Canada, 2018
+\end{rSection}
+
+\iffalse
+\begin{rSection}{Work Experience}
+\end{rSection}
+\fi
+
+\begin{rSection}{Research Experience}
+
+  \begin{rSubsection}{Research Assistant,State Key Lab of CAD\&CG,ZJU}{September 2016 - present}
+    {Advisor: Prof. Jin Huang}{See below project section for details}
+\item {\bf Numerical coarsening of FEM based solid simulation}
+\item {\bf Cloth or solid simulation using mass-spring model} 
+\item {\bf Super-resolution of shallow water equation simulation based on GAN}
+  \end{rSubsection}
+  \begin{rSubsection}{Research \& Development Intern,Xmov,Shanghai}{September 2019 - present}
+    {Advisor: Prof. Jinxiang Chai}{See below project section for details}
+\item {\bf Single view or sparse multi-view based hair modeling}
+%\item {\bf Cloth or hair simulation with Unreal Engine} 
+  \end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Selected Graphics related Projects}
+
+  {\bf Cloth or solid simulation using mass-spring model}\\In the National Key R\&D Program of China, I implemented three versions of mass-spring based simulation: using classical Newton method, using local-global strategy based on the paper \textit{Fast Simulation of Mass-Spring Systems}, using modified fast mass-spring based on the paper \textit{A Chebyshev Semi-Iterative Approach for Accelerating Projective and Position-based Dynamics} with a CUDA version jacobi solver acceleration for sparse matrix for its one simulation module independently.\\
+  \\{\bf Numerical coarsening of FEM based solid simulation}\\ Research for numerical coarsening acceleration solving of FEM based solid simulation with heterogeneous materials and non-linear constitutive laws on coarse grid. See the paper \emph{Numerical Coarsening using Discontinuous Shape Functions} published in the ACM Transactions on Graphics 2018 for the algorithm details. In this process, I implemented a basic FEM based solid simulation framework quickly first and then did the major two papers' comparison experiments almost by myself. And the first author Jiong Chen and I frequently communicated to analyze the experiment results and shared our observations to promote it. \\
+  \\{\bf Heat flow based geodesic distance computation}\\An implementation of the paper \emph{Geodesics in Heat:A New Approach to Computing Distance Based on Heat Flow} which uses heat flow to compute the geodesic distance for per mesh vertex or per points cloud's point to the specified mesh vertex or point on point cloud. The algorithm core is just solving a Poisson's equation which is elegant and concise in maths! This project is just my hobby.\\
+  \\{\bf L1-based construction of polycube maps for mesh}\\ An implementation of the core algorithm of the paper \emph{L1-based Construction of Polycube Maps from Complex Shapes} which uses a L1 Polycube deformation based method for hexahedralization and the algorithm is mainly solving L1 norm optimization problem.\\
+  \\{\bf Super-resolution of shallow water equation simulation based on GAN}\\ Research for SWE simulation data's super-resolution using GAN. My master thesis proposes to achieve the SWE data super-resolution using GAN. By taking account of the temporal smoothness demand, rotation equivalence requirement, the possible negative value, this thesis proposes some modifications to the state of the art and obtains verified better results. See the \emph{\href{https://wtyatzoo.github.io/reports/SWE.pdf}{SWE report}} for details. \\
+  \\{\bf Single view or sparse multi-view based hair modeling}\\ Research\&Development for using a small number of images as input to reconstruct the 3D hair model to accelerate the process of hair asserts production for artists. First, I surveyed 18 representative papers from 2012 to 2019 published at SIGGRAPH(Asia) or CVPR focusing on hair modeling and gave myself a clear feeling of its evolution. Then, according to these four aspects:(a).whether this algorithm is stable(some deep learning based methods are not stable for practical use),(b).whether the input of this algorithm matches the input from current available hardware,(c).whether the output of this algorithm is physically available for simulation,(d).whether the data flow in this algorithm can be refined by artists flexibly, I select the combination of algorithm and make some modifications to make a tool for artists. The 2D feature extraction module and the hair model's data augmentation by clustering and recombination have been achieved. Now this project is still in progress. See the \emph{\href{https://wtyatzoo.github.io/reports/hair.pdf}{hair report}} for details. \\
+                         
+\end{rSection}
+
+\begin{rSection}{Honors and Awards}
+  \textbf{Graduate of Merit/Triple A graduate}, Zhejiang University, 2018\\
+  \textbf{Award of Honor for Graduate}, Zhejiang University, 2018\\
+  \textbf{Wen Chixiang Scholarship}, Zhejiang University, 2018\\
+  \textbf{Silver Medal}, ACM-ICPC China Provincial Programming Contest, Chengdu Site, 2013 and 2014\\
+  \textbf{2nd University Scholarship}, Sichuan University, 2013
+\end{rSection}
+
+%\newpage
+\begin{rSection}{Skills}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+    %English \ & TOEFL score: 94 (R: 26 L:21 S:21 W:26) GRE score: (V:150 Q:170 AW:3.0)\\
+Programming languages \ & C/C++,Python,Java \\
+Toolkit  & \tabincell{l}{Eigen,NumPy,Tensorflow,PyQt,Boost,OpenGL,OpenCV,CUDA,OpenMP,\\\LaTeX,ParaView,GIMP,Inkscape,CMake(Linux),Git,SVN}\\
+Platforms&Linux 16.04
+\end{tabular}
+
+\end{rSection}
+
+\iffalse
+\begin{rSection}{Academic Achievements} 
+ Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018
+\item Won First Prize in Model Making Competition Organized by Symbiosis Institute of Technology, Pune.
+\end{rSection}
+\fi
+
+
+
+\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+\item I love basketball and play as a point guard skilled in shooting!
+\item I love film and TV series and write film review on movie.douban.com!
+\end{rSection}
+
+\iffalse
+\begin{rSection}{Personal Traits}
+\item Highly motivated and eager to learn new things.
+\item Strong motivational and leadership skills.
+\item Ability to work as an individual as well as in group.
+\end{rSection}
+\fi
+
+\end{document}
