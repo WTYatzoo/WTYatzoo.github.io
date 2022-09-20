@@ -12,18 +12,18 @@ URL:http://www.chris-creed.com
 /* -- General Styles -- */
 /* -------------------- */
 #wrap{
-	width:850px;
+	width:1200px;
 	margin:5px auto;
 	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	color:#555;
+	color:#333;
 	border:1px #eee solid;
 	padding:70px 30px 20px 30px;
-	-webkit-box-shadow:0 0 50px #aaa;
-	-moz-box-shadow:0 0 30px #aaa;
-	box-shadow:0 0 10px #aaa;
+	#-webkit-box-shadow:0 0 50px #aaa;
+	#-moz-box-shadow:0 0 30px #aaa;
+	#box-shadow:0 0 10px #aaa;
 	background:#fff;
-	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
+	#background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
+	#background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
 }
 body{
 	font-family:times, serif;
@@ -57,7 +57,7 @@ p{
 }
 a{
 	text-decoration:none;
-	color:#0b8bbb;
+	color:#A0522D;
 }
 a:hover{
 	color:#eee;
@@ -71,21 +71,21 @@ a:hover{
 /* ------------ */
 #header{
 	float:left;
-	width:800px;
+	width:1200px;
 	margin:0 0 55px 0;
 }
 #header #header-content{
 	float:left;
-	width:600px;
+	width:800px;
 }
 #header #header-content h1{
 	margin:0 5px 2px 30px;
-	color:#444;
+	color:#333;
 	font-size:22px;
 }
 #header #header-content h2{
 	margin:10px 0 2px 30px;
-	color:#0b8bbb;
+	color:#333;
 	font-size:18px;
 }
 #header #header-content p{
@@ -98,21 +98,21 @@ a:hover{
 }
 #header #header-content .contact{
 	font-size:16px;
-	color:#888;
+	color:#333;
 	margin:0;
 }
 #header #header-content .contact span{
-	color:#444;
-	width:75px;
+	color:#333;
+	width:55px;
 	float:left;
 }
 #header #header-photo{
 	float:left;
 	background-color:#eee;
 	padding:5px 5px 2px 5px;
-	-webkit-box-shadow:0 0 10px #aaa;
-	-moz-box-shadow:0 0 10px #aaa;
-	box-shadow:0 0 5px #aaa;
+	#-webkit-box-shadow:0 0 10px #aaa;
+	#-moz-box-shadow:0 0 10px #aaa;
+	#box-shadow:0 0 5px #aaa;
 }
 #header #header-photo img{
 	width:150px;
@@ -123,50 +123,51 @@ a:hover{
 /* -- Content -- */
 /* ------------- */
 #content{
-	width:800px;
+	width:1200px;
 	margin:0 0 15px 10px;
 }
 #content #cv-section-item{
 	float:left;
-	width:800px;
+	width:1000px;
 	margin:0 0 15px 0px;
 }
 #content #cv-section-item #cv-section-item-content{
 	float:left;
-	width:500px;
+	width:700px;
 	margin:0 0 15px 30px;
 }
 #content #cv-section-item #cv-section-item-content h3{
 	font-size:20px;
-	color:#444;
+	color:#333;
 }
 #content #cv-section-item #cv-section-item-content h4.title{
 	font-size:18px;
-	color:#0b8bbb;
+	color:#333;
 	margin:0 0 0 0px;
 }
 #content #cv-section-item #cv-section-item-content h4.authors{
 	font-size:18px;
-	color:#777;
+	color:#333;
 	margin:5px 0 5px 0px;
 }
-#content #cv-section-item #cv-section-item-content h4.links{
-	font-size:16px;
-	color:#0b8bbb;
+#content #cv-section-item #cv-section-item-content p.links{
+	font-size:15px;
+	color:#333;
+    margin:5px 0 0px 0px;
 }
 #content #cv-section-item #cv-section-item-content p{
 	font-size:16px;
-	color:#555;
+	color:#333;
 	letter-spacing:0;
 	margin:0 0 0px 0px;
 }
 #content #cv-section-item #cv-section-item-image{
 	float:left;
-	background-color:#eee;
-	padding:1px 1px 1px 1px;
-	-webkit-box-shadow:0 0 2px #aaa;
-	-moz-box-shadow:0 0 2px #aaa;
-	box-shadow:0 0 5px #aaa;
+	#background-color:#eee;
+	#padding:1px 1px 1px 1px;
+	#-webkit-box-shadow:0 0 2px #aaa;
+	#-moz-box-shadow:0 0 2px #aaa;
+	#box-shadow:0 0 5px #aaa;
 }
 #content #cv-section-item #cv-section-item-image img{
 	width:250px;
@@ -175,12 +176,13 @@ a:hover{
 }
 
 .gallery_format{
-  width: 11%;
+  width: 0%;
   padding:5px;
   float:left;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  margin-right:20px;
-  box-shadow: 2px 2px 4px 2px #ccc;
+  margin-right:10px;
+  #box-shadow: 2px 2px 4px 2px #ccc;
+  border:1px #ddd solid;
 }
